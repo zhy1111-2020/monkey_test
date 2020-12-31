@@ -1,0 +1,9 @@
+<jnlp codebase="http://ci.corp.youdao.com/jenkins/computer/hangzhou_test/" spec="1.0+"><information><title>Agent for hangzhou_test</title><vendor>Jenkins project</vendor><homepage href="https://jenkins-ci.org/"/></information><security><all-permissions/></security><resources><j2se version="1.8+"/><jar href="http://ci.corp.youdao.com/jenkins/jnlpJars/remoting.jar"/></resources><application-desc main-class="hudson.remoting.jnlp.Main"><argument>16af45b2a6c38b7771351aefce8a23cbb2b849a605408c6fea3ad1ab714d3dbc</argument><argument>hangzhou_test</argument><argument>-workDir</argument><argument>D:\Jenkins</argument><argument>-internalDir</argument><argument>remoting</argument><argument>-url</argument><argument>http://ci.corp.youdao.com/jenkins/</argument></application-desc></jnlp>
+
+
+
+
+ http://123.123.219.77:14024/jenkins/
+
+
+java -jar agent.jar -jnlpUrl  http://123.123.219.77:14024/jenkins/computer/hangzhou_test/slave-agent.jnlp -secret 16af45b2a6c38b7771351aefce8a23cbb2b849a605408c6fea3ad1ab714d3dbc -workDir "D:\Jenkins"

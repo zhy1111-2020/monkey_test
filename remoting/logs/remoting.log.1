@@ -1,0 +1,118 @@
+十二月 31, 2020 10:54:04 上午 hudson.remoting.jnlp.Main createEngine
+信息: Setting up agent: hangzhou_test
+十二月 31, 2020 10:54:04 上午 hudson.remoting.jnlp.Main$CuiListener <init>
+信息: Jenkins agent is running in headless mode.
+十二月 31, 2020 10:54:04 上午 hudson.remoting.Engine startEngine
+信息: Using Remoting version: 3.25
+十二月 31, 2020 10:54:04 上午 org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+信息: Using D:\Jenkins\remoting as a remoting work directory
+十二月 31, 2020 10:54:04 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Locating server among [http://ci.corp.youdao.com/jenkins/, http://123.123.219.77:14024/jenkins/]
+十二月 31, 2020 10:54:05 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping, JNLP3-connect]
+十二月 31, 2020 10:54:07 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver isPortVisible
+警告: Connection refused: connect
+十二月 31, 2020 10:54:07 上午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping, JNLP3-connect]
+十二月 31, 2020 10:54:07 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Agent discovery successful
+  Agent address: 123.123.219.77
+  Agent port:    18889
+  Identity:      37:04:9b:c3:bc:66:cd:57:a3:89:92:ce:9e:6b:e9:37
+十二月 31, 2020 10:54:07 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Handshaking
+十二月 31, 2020 10:54:07 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connecting to 123.123.219.77:18889
+十二月 31, 2020 10:54:07 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Trying protocol: JNLP4-connect
+十二月 31, 2020 10:54:07 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Remote identity confirmed: 37:04:9b:c3:bc:66:cd:57:a3:89:92:ce:9e:6b:e9:37
+十二月 31, 2020 10:54:08 上午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connected
+十二月 31, 2020 10:54:12 上午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class org.jenkinsci.plugins.envinject.EnvInjectComputerListener$2; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+十二月 31, 2020 12:09:35 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Terminated
+十二月 31, 2020 12:10:11 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+信息: Failed to connect to the master. Will try again: java.net.SocketTimeoutException connect timed out
+十二月 31, 2020 12:10:26 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+信息: Failed to connect to the master. Will try again: java.net.SocketTimeoutException connect timed out
+十二月 31, 2020 12:10:36 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Locating server among [http://ci.corp.youdao.com/jenkins/, http://123.123.219.77:14024/jenkins/]
+十二月 31, 2020 12:10:36 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping, JNLP3-connect]
+十二月 31, 2020 12:10:36 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Agent discovery successful
+  Agent address: 123.123.219.77
+  Agent port:    18889
+  Identity:      37:04:9b:c3:bc:66:cd:57:a3:89:92:ce:9e:6b:e9:37
+十二月 31, 2020 12:10:36 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Handshaking
+十二月 31, 2020 12:10:36 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connecting to 123.123.219.77:18889
+十二月 31, 2020 12:10:36 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Trying protocol: JNLP4-connect
+十二月 31, 2020 12:10:36 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Remote identity confirmed: 37:04:9b:c3:bc:66:cd:57:a3:89:92:ce:9e:6b:e9:37
+十二月 31, 2020 12:10:36 下午 org.jenkinsci.remoting.protocol.impl.ConnectionHeadersFilterLayer onRecv
+信息: [JNLP4-connect connection to 123.123.219.77/123.123.219.77:18889] Local headers refused by remote: hangzhou_test is already connected to this master. Rejecting this connection.
+十二月 31, 2020 12:10:36 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Protocol JNLP4-connect encountered an unexpected exception
+java.util.concurrent.ExecutionException: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: hangzhou_test is already connected to this master. Rejecting this connection.
+	at org.jenkinsci.remoting.util.SettableFuture.get(SettableFuture.java:223)
+	at hudson.remoting.Engine.innerRun(Engine.java:614)
+	at hudson.remoting.Engine.run(Engine.java:474)
+Caused by: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: hangzhou_test is already connected to this master. Rejecting this connection.
+	at org.jenkinsci.remoting.protocol.impl.ConnectionHeadersFilterLayer.newAbortCause(ConnectionHeadersFilterLayer.java:378)
+	at org.jenkinsci.remoting.protocol.impl.ConnectionHeadersFilterLayer.onRecvClosed(ConnectionHeadersFilterLayer.java:433)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:832)
+	at org.jenkinsci.remoting.protocol.FilterLayer.onRecvClosed(FilterLayer.java:287)
+	at org.jenkinsci.remoting.protocol.impl.SSLEngineFilterLayer.onRecvClosed(SSLEngineFilterLayer.java:172)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:832)
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer.access$1500(BIONetworkLayer.java:48)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader.run(BIONetworkLayer.java:247)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:93)
+	at java.lang.Thread.run(Unknown Source)
+	Suppressed: java.nio.channels.ClosedChannelException
+		... 7 more
+
+十二月 31, 2020 12:10:36 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connecting to 123.123.219.77:18889
+十二月 31, 2020 12:10:36 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Server reports protocol JNLP4-plaintext not supported, skipping
+十二月 31, 2020 12:10:36 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Trying protocol: JNLP3-connect
+十二月 31, 2020 12:10:37 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Protocol JNLP3-connect encountered an unexpected exception
+java.util.concurrent.ExecutionException: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: JNLP3-connect: Master rejected connection: 
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at hudson.remoting.Engine.innerRun(Engine.java:614)
+	at hudson.remoting.Engine.run(Engine.java:474)
+Caused by: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: JNLP3-connect: Master rejected connection: 
+	at org.jenkinsci.remoting.engine.JnlpProtocol3Handler.sendHandshake(JnlpProtocol3Handler.java:243)
+	at org.jenkinsci.remoting.engine.JnlpProtocol3Handler.sendHandshake(JnlpProtocol3Handler.java:127)
+	at org.jenkinsci.remoting.engine.LegacyJnlpProtocolHandler$2.call(LegacyJnlpProtocolHandler.java:162)
+	at org.jenkinsci.remoting.engine.LegacyJnlpProtocolHandler$2.call(LegacyJnlpProtocolHandler.java:158)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+十二月 31, 2020 12:10:37 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connecting to 123.123.219.77:18889
+十二月 31, 2020 12:10:37 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Server reports protocol JNLP2-connect not supported, skipping
+十二月 31, 2020 12:10:37 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Server reports protocol JNLP-connect not supported, skipping
+十二月 31, 2020 12:10:37 下午 hudson.remoting.jnlp.Main$CuiListener error
+严重: The server rejected the connection: None of the protocols were accepted
+java.lang.Exception: The server rejected the connection: None of the protocols were accepted
+	at hudson.remoting.Engine.onConnectionRejected(Engine.java:675)
+	at hudson.remoting.Engine.innerRun(Engine.java:639)
+	at hudson.remoting.Engine.run(Engine.java:474)
+

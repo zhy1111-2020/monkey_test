@@ -1,0 +1,37 @@
+十二月 31, 2020 12:23:52 下午 hudson.remoting.jnlp.Main createEngine
+信息: Setting up agent: hangzhou_test
+十二月 31, 2020 12:23:52 下午 hudson.remoting.jnlp.Main$CuiListener <init>
+信息: Jenkins agent is running in headless mode.
+十二月 31, 2020 12:23:52 下午 hudson.remoting.Engine startEngine
+信息: Using Remoting version: 3.25
+十二月 31, 2020 12:23:52 下午 org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+信息: Using D:\Jenkins\remoting as a remoting work directory
+十二月 31, 2020 12:23:52 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Locating server among [http://ci.corp.youdao.com/jenkins/, http://123.123.219.77:14024/jenkins/]
+十二月 31, 2020 12:23:53 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping, JNLP3-connect]
+十二月 31, 2020 12:23:55 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver isPortVisible
+警告: Connection refused: connect
+十二月 31, 2020 12:23:55 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping, JNLP3-connect]
+十二月 31, 2020 12:23:55 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Agent discovery successful
+  Agent address: 123.123.219.77
+  Agent port:    18889
+  Identity:      37:04:9b:c3:bc:66:cd:57:a3:89:92:ce:9e:6b:e9:37
+十二月 31, 2020 12:23:55 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Handshaking
+十二月 31, 2020 12:23:55 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connecting to 123.123.219.77:18889
+十二月 31, 2020 12:23:55 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Trying protocol: JNLP4-connect
+十二月 31, 2020 12:23:55 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Remote identity confirmed: 37:04:9b:c3:bc:66:cd:57:a3:89:92:ce:9e:6b:e9:37
+十二月 31, 2020 12:23:56 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Connected
+十二月 31, 2020 12:24:00 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class org.jenkinsci.plugins.envinject.EnvInjectComputerListener$2; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+十二月 31, 2020 12:39:45 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class org.jenkinsci.plugins.gitclient.Git$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+十二月 31, 2020 12:39:53 下午 org.jenkinsci.remoting.util.AnonymousClassWarnings warn
+警告: Attempt to (de-)serialize anonymous class org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/

@@ -1,0 +1,21 @@
+十二月 30, 2020 6:08:40 下午 hudson.remoting.jnlp.Main createEngine
+信息: Setting up agent: hangzhou_test
+十二月 30, 2020 6:08:40 下午 hudson.remoting.jnlp.Main$CuiListener <init>
+信息: Jenkins agent is running in headless mode.
+十二月 30, 2020 6:08:40 下午 hudson.remoting.Engine startEngine
+信息: Using Remoting version: 3.25
+十二月 30, 2020 6:08:40 下午 org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+信息: Using D:\Jenkins\remoting as a remoting work directory
+十二月 30, 2020 6:08:40 下午 hudson.remoting.jnlp.Main$CuiListener status
+信息: Locating server among [http://ci.corp.youdao.com/jenkins/]
+十二月 30, 2020 6:08:40 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+信息: Remoting server accepts the following protocols: [JNLP4-connect, Ping, JNLP3-connect]
+十二月 30, 2020 6:08:42 下午 org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver isPortVisible
+警告: Connection refused: connect
+十二月 30, 2020 6:08:42 下午 hudson.remoting.jnlp.Main$CuiListener error
+严重: http://ci.corp.youdao.com/jenkins/ provided port:18889 is not reachable
+java.io.IOException: http://ci.corp.youdao.com/jenkins/ provided port:18889 is not reachable
+	at org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver.resolve(JnlpAgentEndpointResolver.java:286)
+	at hudson.remoting.Engine.innerRun(Engine.java:523)
+	at hudson.remoting.Engine.run(Engine.java:474)
+
